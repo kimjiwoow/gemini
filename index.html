@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>쌍둥이자리 결과</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background-color: #45357D;
+      font-family: 'Pretendard', sans-serif;
+      color: #fff;
+      padding: 40px 16px 100px;
+    }
+    .container {
+      width: 100%;
+      max-width: 485px;
+      margin: 0 auto;
+    }
+    .header { text-align: center; margin-bottom: 32px; }
+    .header img { width: 180px; margin-bottom: 12px; }
+    .header h1 { font-size: 22px; font-weight: 700; color: #FFD579; }
+    .header p { font-size: 14px; color: #FFD579; margin-top: 4px; }
+
+    .card {
+      background: rgba(255, 255, 255, 0.08);
+      border-radius: 16px;
+      padding: 20px 24px;
+      margin-bottom: 16px;
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .card.myth {
+      background-color: #45357D;
+      border: none;
+    }
+
+    .card h2 {
+      font-size: 18px;
+      color: #FFEA92;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+      padding-left: 8px;
+      padding-bottom: 4px;
+      border-left: 3px solid #ffea92;
+    }
+
+    .card h2::before { content: '✨'; margin-right: 8px; }
+    .card p { font-size: 14px; line-height: 1.8; }
+
+    .highlight { color: #FFD579; font-weight: bold; }
+    .good { color: #56bad6; font-weight: bold; }
+    .bad { color: #FFC0CB; font-weight: bold; }
+    .spaced { margin-top: 14px; }
+
+    .extra-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .sub-button {
+      background-color: rgba(255, 255, 255, 0.1);
+      color: #fff;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      padding: 10px 20px;
+      border-radius: 25px;
+      font-size: 14px;
+      cursor: pointer;
+      backdrop-filter: blur(6px);
+      transition: all 0.3s ease;
+    }
+
+    .sub-button:hover {
+      background-color: rgba(255, 255, 255, 0.2);
+      box-shadow: 0 0 10px 3px #fff;
+      transform: translateY(-1px);
+    }
+
+    .coordi-toggle {
+      margin-top: 8px;
+      font-size: 20px;
+      color: #FFD579;
+      background: none;
+      border: none;
+      cursor: pointer;
+      transition: transform 0.2s, text-shadow 0.3s;
+    }
+
+    .coordi-toggle:hover {
+      transform: scale(1.2);
+      text-shadow: 0 0 8px #FFD579;
+    }
+
+    .coordi-img {
+      display: none;
+      margin-top: 12px;
+      width: 100%;
+      border-radius: 12px;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <img src="https://i.imgur.com/fQFKMcG.png" alt="쌍둥이자리 캐릭터">
+      <h1>👯‍♀️ 쌍둥이자리 👯‍♀️</h1>
+      <p>5월 21일 ~ 6월 21일</p>
+    </div>
+
+    <div class="card myth">
+      <h2>신화 소개</h2>
+      <p>쌍둥이자리의 주인공은 우애 깊은 형제 카스토르와 폴룩스다. 카스토르는 인간이었고, 폴룩스는 제우스의 피를 이어받은 불사의 존재였다. 카스토르가 죽자 폴룩스는 제우스에게 함께 죽게 해달라고 간청했고, 제우스는 이들의 우애에 감동해 두 형제를 하늘의 별자리로 만들었다. 이들은 지금도 나란히 밤하늘에서 빛나고 있다.</p>
+      <p class="spaced"><span class="highlight">유명인:</span> 공유, 강호동, 쯔위, 다현, 박보검, 유인나, 차승원, 이수혁</p>
+    </div>
+
+    <div class="card">
+      <h2>성격</h2>
+      <p>말 많고 호기심 많은 쌍둥이자리는 지루한 걸 세상에서 제일 싫어한다. 머리 회전이 빠르고 다재다능하며, 어떤 상황에도 빠르게 적응하는 능력을 갖췄다. 
+      대화에 능하고, 센스 넘치며, 분위기 메이커 역할을 톡톡히 한다. </p>
+      <p>하지만 집중력이 부족하고, 깊은 감정 교류보다는 가볍고 유쾌한 인간관계를 선호하는 경향이 있다. 
+      하루에도 몇 번씩 기분이 바뀌는 변덕쟁이지만, 그 나름대로의 매력을 가진 별자리다.</p>
+    </div>
+
+    <div class="card">
+      <h2>궁합</h2>
+      <p><span class="good">좋은 궁합:</span> 천칭자리, 물병자리, 양자리<br>
+         <span class="bad">나쁜 궁합:</span> 물고기자리, 황소자리</p>
+      <p class="spaced">재치 있고 유쾌한 쌍둥이자리는 다양한 사람들과 잘 어울리지만, 감정의 깊이보다는 대화와 유희를 더 중시하는 경향이 있다.</p>
+      <p>천칭자리, 물병자리와는 지적이고 자유로운 소통이 잘 맞고, 양자리와는 행동력과 텐션이 비슷해 서로에게 자극이 되는 관계다. </p>
+      <p>그러나 감정적으로 깊고 헌신적인 물고기자리, 느리고 고집스러운 황소자리와는 성격 차이로 인해 갈등이 생기기 쉽다.</p>
+    </div>
+
+    <div class="card">
+      <h2>TIP</h2>
+      <p><span class="good">참고할 것:</span> 연애, 인간관계, 일, 쇼핑까지 흐름이 좋아 어디서든 인정받고 즐거운 만남이 기대되는 한 주입니다.</p>
+      <p><span class="bad">주의할 것:</span> 행운지수가 낮아 사행성이나 운에 의존하는 일은 절대 피해야 합니다.</p>
+    </div>
+
+    <div class="card">
+      <h2>행운 정보</h2>
+      <p><span class="highlight">행운의 숫자:</span> 3 , 4<br>
+         <span class="highlight">행운의 색상:</span> 노란색<br>
+         <span class="highlight">행운의 자음:</span> ㅂ , ㄱ<br>
+         <span class="highlight">베스트 운동:</span> 유산소운동 / 배드민턴 / 탁구<br>
+         <span class="highlight">행운의 장소:</span> 카페, 방송국, SNS 핫플레이스 → 사람들과 소통할 수 있는 장소에서 새로운 인연이 생겨요!<br>
+         <span class="highlight">행운의 아이템:</span> 금은팔찌<br>
+         <span class="highlight">행운의 코디:</span> 그래픽 티셔츠, 연청 데님, 비비드 소품</p>
+      <button id="toggleBtn" class="coordi-toggle" onclick="toggleCoordi()">+</button>
+      <img id="coordiImage" class="coordi-img" src="https://i.imgur.com/RhB5UJT.png" alt="행운의 코디  이미지">
+    </div>
+  </div>
+
+  <div class="extra-buttons">
+
+  <button class="sub-button" onclick="location.href='https://kimjiwoow.github.io/write-/'">뒤로가기</button>
+  
+  <button class="sub-button" onclick="location.href='https://kimjiwoow.github.io/write-/'">포춘카드 뽑기</button>
+  <script>
+    function toggleCoordi() {
+      const img = document.getElementById("coordiImage");
+      const button = document.getElementById("toggleBtn");
+
+      if (img.style.display === "block") {
+        img.style.display = "none";
+        button.innerText = "+";
+      } else {
+        img.style.display = "block";
+        button.innerText = "–";
+      }
+    }
+  </script>
+</body>
+</html>
